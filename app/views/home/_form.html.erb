@@ -1,0 +1,15 @@
+<div data-hook="github_search_form_fields">
+
+  <div class="row">
+    <div data-hook="github_search_form_name_fields">
+      <%= f.fields_for :name, class: ['form-group'] do %>
+        <%= f.label :name, 'Enter Repo Name' %>
+        <%= f.text_field :name, class: 'form-control' %>
+      <% end %>
+    </div>
+    <div data-hook="github_search_form_button">
+      <%= f.button 'Search' %>
+    </div>
+  </div>
+
+</div>

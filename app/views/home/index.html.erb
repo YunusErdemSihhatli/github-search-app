@@ -1,0 +1,7 @@
+<div data-hook="github_search_form">
+  <%= form_for home_index_path, method: :get do |f| %>
+    <fieldset>
+      <%= render partial: 'form', locals: { f: f } %>
+    </fieldset>
+  <% end %>
+</div>
