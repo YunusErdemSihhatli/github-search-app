@@ -1,25 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Don't forget to add .env file before running the project like below:
 
-Things you may want to cover:
+NOTE: If you don't add env variable, you can't search any response.
 
-* Ruby version
+    # /.env
+    GITHUB_TOKEN=<YOUR_TOKEN>
 
-* System dependencies
+To generate Github Token below link:
 
-* Configuration
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # github-search-app
