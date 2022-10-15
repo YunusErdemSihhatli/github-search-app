@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # HTTP/REST API client library
 gem 'faraday', '~> 2.6'
+
+gem 'kaminari'

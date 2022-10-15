@@ -10,8 +10,8 @@ module Github
     def call
       request_params = {
         q: @mame,
-        sort: 'stars',
-        order: 'desc'
+        order: 'desc',
+        page: @options[:page]
       }
 
       conn = Faraday.new(

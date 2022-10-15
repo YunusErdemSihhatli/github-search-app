@@ -1,7 +1,17 @@
 <div data-hook="github_search_form">
-  <%= form_for home_index_path, method: :get do |f| %>
-    <fieldset>
-      <%= render partial: 'form', locals: { f: f } %>
-    </fieldset>
+  <%= form_with url: home_index_path, method: :get do |f| %>
+    <%= render partial: 'form', locals: { f: f } %>
   <% end %>
 </div>
+
+<div data-hook="github_search_items">
+  <% if @items.present? %>
+    <% @items.each do |item| %>
+      <div>
+        <%= link_to item['name'], item['html_url'] %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<%= paginate @paginatable_array %>
